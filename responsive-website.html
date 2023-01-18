@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 800px;
+            border: 1px solid plum;
+        }
+        /* Two column */
+        .two-column{
+            display: flex;
+        }
+        .two-column .split{
+            width: 50%;
+        }
+        .split img{
+            width: 100%;
+        }
+        .multi-column{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 2px solid indianred;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .food img{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            /* Two column */
+            .two-column{
+                flex-direction: column-reverse;
+            }
+            .two-column .split{
+                width: 100%;
+            }
+            /* Multi column */
+            .multi-column{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        /* For Tablet */
+        @media screen and (max-width: 992px) and (min-width: 577px) {
+            /* Multi column */
+            .multi-column{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 7(Necessary things for Responsiveness) -->
+    <!-- 7 Necessary things for Responsiveness:
+        1. Viewport meta tag
+        2. css relative unit
+        3. responsive image
+        4. body max width and margin auto
+        5. responsive split screen using flex
+        6. grid responsive(Multi column)
+        7. responsive menu(Bootstrap)
+    -->
+    <!-- 8(Multi column responsive website) -->
+    <!-- Two column -->
+    <section class="two-column">
+        <div class="split">
+            <img src="images/food.jpg" alt="">
+        </div>
+        <div class="split">
+            <img src="images/food.jpg" alt="">
+        </div>
+    </section>
+    <!-- Multi column -->
+    <section class="multi-column">
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-1</h2>
+            <h4>Price: 100</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint quidem impedit consequatur amet dolores, architecto nisi repellat incidunt expedita sit illo quibusdam odit totam obcaecati doloribus eligendi aliquid hic.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-2</h2>
+            <h4>Price: 200</h4>
+            <p>Id dignissimos assumenda hic laudantium. Necessitatibus assumenda, ducimus doloremque ex quasi illo esse quae reiciendis corporis ut quis nam officiis enim vel veniam sunt quidem modi, accusantium iure sit. Odio?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-3</h2>
+            <h4>Price: 300</h4>
+            <p>Id eaque rem nihil debitis consequatur ab quisquam error modi blanditiis dolorum repudiandae atque maiores accusamus, dignissimos perferendis, adipisci esse assumenda eius veritatis? Tempora ut cumque dignissimos modi quis harum?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-4</h2>
+            <h4>Price: 400</h4>
+            <p>Ut vitae sunt tempore quas placeat, maxime sapiente quis fugiat molestiae dolore voluptate aperiam doloribus velit. Culpa dolores quam dolorem sequi ipsa, quis distinctio error, placeat eius reiciendis excepturi autem?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-5</h2>
+            <h4>Price: 500</h4>
+            <p>Veniam, dolores nulla maiores voluptates animi sed quidem eum quod aliquam facere deserunt incidunt necessitatibus sunt at sint excepturi debitis itaque ipsum ea repellendus nemo, similique enim asperiores? Veritatis, dolorem.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-6</h2>
+            <h4>Price: 600</h4>
+            <p>Suscipit voluptate odit quibusdam id magni aperiam eos alias architecto sapiente obcaecati dolorum eligendi amet laudantium beatae nihil vitae quae doloribus, tenetur ipsa velit perspiciatis nobis. Harum ut architecto deleniti?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-7</h2>
+            <h4>Price: 700</h4>
+            <p>Fugiat ab culpa voluptas veritatis eum delectus nobis nam, hic reiciendis, sequi illo obcaecati, tenetur laudantium voluptatum vel quo quidem eos repellendus optio in ut non consequuntur. Ullam, fugiat sit.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-8</h2>
+            <h4>Price: 800</h4>
+            <p>Aliquam tempora ad soluta vitae, cum numquam pariatur debitis blanditiis praesentium ea doloremque eos. Cumque neque consequuntur voluptas fugit sapiente. Totam itaque deserunt quasi ea earum eum facilis consequuntur dicta.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-9</h2>
+            <h4>Price: 900</h4>
+            <p>Ratione consectetur est laboriosam asperiores excepturi, vel debitis perspiciatis sunt iste. Non ut culpa alias dolorum, accusantium delectus beatae vitae distinctio, dignissimos molestiae dolorem illo, cum ab a voluptatum odio!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-10</h2>
+            <h4>Price: 1000</h4>
+            <p>Ipsum rem enim placeat sit illo, alias illum tempore consectetur incidunt facilis dolores. Quos ipsam esse harum consectetur, assumenda voluptatum ut cupiditate eaque, laboriosam velit, cum illum labore ab sed?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-11</h2>
+            <h4>Price: 1100</h4>
+            <p>Suscipit optio officia quasi nam totam, dolorum aliquid alias deserunt perspiciatis possimus beatae, facere cupiditate. Placeat, fugiat! Quas saepe officia at? Minus incidunt, neque animi dolores culpa recusandae quasi numquam.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg">
+            <h2>Item-12</h2>
+            <h4>Price: 1200</h4>
+            <p>Quod eum maxime quaerat accusantium suscipit, inventore facere quas facilis rerum illo sint dolorem alias voluptatum eveniet placeat voluptas, consequatur est? Beatae, vero. Fuga ad rerum voluptas mollitia veritatis unde!</p>
+            <button>Order Now</button>
+        </div>
+    </section>
+    <!-- 9(Everything you need to know about css properties) -->
+    <section style="margin: 100px 50px; font-size: larger; font-weight: 700;">
+        align-items: ;animation: ;background: ;background-image: ;background-origin: ;background-position: ;background-repeat: ;background-size: ;border: ;border-radius: ;bottom: ;box-shadow: ;color: ;content: ;cursor: ;display: ;flex: ;flex-direction: ;flex-wrap: ;font: ;font-family: ;font-size: ;font-style: ;font-weight: ;height: ;justify-content: ;left: ;line-height: ;list-style: ;margin: ;max-width: ;max-height: ;min-width: ;min-height: ;order: ;outline: ;overflow: ;overflow-y: ;overflow-x: ;padding: ;perspective: ;position: ;quotes: ;right: ;text-align: ;text-decoration: ;text-justify: ;text-shadow: ;top: ;transform: ;transform-origin: ;transition: ;visibility: ;white-space: ;width: ;z-index: ;
+    </section>
+</body>
+</html>
